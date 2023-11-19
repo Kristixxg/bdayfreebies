@@ -1,15 +1,17 @@
-import './App.css';
-import Card from './components/Card';
-import SearchBar from './components/SearchBar';
+import "./App.css";
+import Card from "./components/Card";
+import Phone from "./components/Phone";
+import SearchBar from "./components/SearchBar";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Card />
-        <SearchBar />
+      <div className="w-full flex justify-center items-center h-screen bg-black">
+      <Phone />
+      </div>
 
-      </header>
+
+ 
     </div>
   );
 }
