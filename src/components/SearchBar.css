@@ -29,6 +29,7 @@
   }
   
   .button {
+    border-radius: 4px;
     display: inline-block;
     margin: 4px 2px;
     background-color: #444;
@@ -58,12 +59,11 @@
   }
   
   .search-container {
-    position: relative;
-    display: inline-block;
-    margin: 4px 2px;
+    position: absolute;
+    /* display: inline-block; */
     height: 50px;
     width: 50px;
-    vertical-align: bottom;
+    /* vertical-align: bottom; */
   }
   
   .mglass {
@@ -109,7 +109,7 @@
   }
   
   .search:focus {
-    width: 363px; /* Bar width+1px */
+    width: 270px; /* Bar width+1px */
     padding: 0 16px 0 0;
   }
   
