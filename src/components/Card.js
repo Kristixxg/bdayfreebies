@@ -26,7 +26,7 @@ function Card() {
               </div>
               <div class="image-content animate slide">
                 <img
-                  className="opacity-20"
+                  className="opacity-20 object-cover"
                   alt="cover"
                   src={place.fields.coverImage}
                 ></img>
@@ -36,9 +36,7 @@ function Card() {
             <div class="text flex flex-col items-end">
               <img class="inset" src={place.fields["coverImage"]} alt="" />
               <div className="flex flex-col items-end ">
-                <h3 class="text-sm">
-                  {place.fields["name_of_place"]}
-                </h3>
+                <h3 class="text-sm">{place.fields["name_of_place"]}</h3>
                 <p className="text-xs font-bold uppercase text-right">
                   {place.fields.items}
                 </p>
