@@ -36,15 +36,18 @@ function Card() {
             <div class="text flex flex-col items-end">
               <img class="inset" src={place.fields["coverImage"]} alt="" />
               <div className="flex flex-col items-end ">
-                <h3 class="text-sm">{place.fields["name_of_place"]}</h3>
-                <p className="text-xs font-bold uppercase text-right">
+                <h1 class="text-sm font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 uppercase">
+                  {place.fields["name_of_place"]}
+                </h1>
+                <p className="text-xs max-w-[200px] text-right flex-wrap ">{place.fields.address}</p>
+                <p className="mt-3 text-xs font-bold uppercase text-right">
                   {place.fields.items}
                 </p>
                 <p className="text-xs max-w-[200px] text-right flex-wrap ">
-                  {" "}
-                  <em className="font-bold">*Conditions: </em>{" "}
+                  <em className="font-bold">*Conditions: </em>
                   {place.fields.condition}
                 </p>
+              
               </div>
 
               <div className="flex mt-4">
