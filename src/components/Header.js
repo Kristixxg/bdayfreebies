@@ -2,9 +2,16 @@ import React from "react";
 import "./header.css";
 
 function Header() {
+  let currentTimeDate = new Date();
+  var hours = currentTimeDate.getHours();
+  var minutes = currentTimeDate.getMinutes();
+  minutes = minutes < 10 ? "0" + minutes : minutes;
+
   return (
     <div className="w-full h-7 flex justify-evenly items-cente mt-2">
-      <div className="flex flex-1 justify-center">20:08</div>
+      <div className="flex flex-1 justify-center">
+        {hours}:{minutes}
+      </div>
       <div className="flex flex-1 items-center bg-black rounded-3xl"></div>
 
       <div className="flex flex-1 justify-end items-center">

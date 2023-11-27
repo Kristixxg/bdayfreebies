@@ -39,35 +39,42 @@ function Card() {
                 <h1 class="text-sm font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 uppercase">
                   {place.fields["name_of_place"]}
                 </h1>
-                <p className="text-xs max-w-[200px] text-right flex-wrap ">{place.fields.address}</p>
-                <p className="mt-3 text-xs font-bold uppercase text-right">
+                <p className="text-xs max-w-[200px] text-right flex-wrap ">
+                  {place.fields.address}
+                </p>
+                <p className="mt-3 max-w-[200px] text-right flex-wrap  text-xs font-bold uppercase ">
                   {place.fields.items}
                 </p>
                 <p className="text-xs max-w-[200px] text-right flex-wrap ">
                   <em className="font-bold">*Conditions: </em>
                   {place.fields.condition}
                 </p>
-              
               </div>
 
               <div className="flex mt-4">
+                <a target="" href="https://www.yelp.com/">
+                  <img
+                    className="w-8 h-8 m-1 cursor-pointer"
+                    src="https://cdn-icons-png.flaticon.com/128/1377/1377248.png"
+                    alt="yelp"
+                  ></img>
+                </a>
+                <a target="_" href="https://www.instagram.com/">
+                  <img
+                    className="w-8 h-8 m-1 cursor-pointer"
+                    src="https://cdn-icons-png.flaticon.com/128/3955/3955024.png"
+                    alt="instagram"
+                  ></img>
+                </a>
+                <a target="" href="https://www.google.com/maps">
+                  <img
+                    className="w-8 h-8 m-1 cursor-pointer"
+                    src="https://cdn-icons-png.flaticon.com/128/355/355980.png"
+                    alt="googlemap"
+                  ></img>
+                </a>
                 <img
-                  className="w-8 h-8 m-1"
-                  src="https://cdn-icons-png.flaticon.com/128/1377/1377248.png"
-                  alt="yelp"
-                ></img>
-                <img
-                  className="w-8 h-8 m-1"
-                  src="https://cdn-icons-png.flaticon.com/128/3955/3955024.png"
-                  alt="instagram"
-                ></img>
-                <img
-                  className="w-8 h-8 m-1"
-                  src="https://cdn-icons-png.flaticon.com/128/355/355980.png"
-                  alt="googlemap"
-                ></img>
-                <img
-                  className="w-8 h-8 m-1"
+                  className="w-8 h-8 m-1 cursor-not-allowed"
                   src="https://cdn-icons-png.flaticon.com/128/552/552489.png"
                   alt="phone"
                 ></img>
