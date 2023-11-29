@@ -11,6 +11,8 @@ function SearchBar() {
   const [place, setPlace] = useState("");
   console.log(place);
 
+  let isFound = false;
+
   return (
     <>
       <div class="search-container">
@@ -33,9 +35,21 @@ function SearchBar() {
         {allPlaces.records.map((data) => {
           let store = data.fields["name_of_place"];
           if (store.toLowerCase().includes(place)) {
+            isFound = true;
             return <Card data={data} />;
           }
         })}
+
+        {!isFound && (
+          <div className="flex flex-col items-center justify-center">
+            <h1>No Results Found!</h1>
+            <a href="/">
+              <button className="bg-blue-500 hover:bg-blue-400 text-xs text-white font-bold py-2 px-4 mt-2 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+                Refresh
+              </button>
+            </a>
+          </div>
+        )}
       </div>
     </>
   );

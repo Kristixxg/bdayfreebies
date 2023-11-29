@@ -36,7 +36,7 @@ function Card({ data }) {
 
         <div class="text flex flex-col items-end">
           <img
-            className="inset hover:cursor-pointer hover:opacity-80"
+            className="inset"
             src={data.fields["coverImage"]}
             alt=""
           />
