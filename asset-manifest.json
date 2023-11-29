@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.7df90862.css",
-    "main.js": "/static/js/main.6d2555eb.js",
-    "static/js/787.1b1f5857.chunk.js": "/static/js/787.1b1f5857.chunk.js",
-    "index.html": "/index.html",
-    "main.7df90862.css.map": "/static/css/main.7df90862.css.map",
-    "main.6d2555eb.js.map": "/static/js/main.6d2555eb.js.map",
-    "787.1b1f5857.chunk.js.map": "/static/js/787.1b1f5857.chunk.js.map"
+    "main.css": "/bdayfreebies/static/css/main.7df90862.css",
+    "main.js": "/bdayfreebies/static/js/main.81e19135.js",
+    "static/js/787.1b1f5857.chunk.js": "/bdayfreebies/static/js/787.1b1f5857.chunk.js",
+    "index.html": "/bdayfreebies/index.html",
+    "main.7df90862.css.map": "/bdayfreebies/static/css/main.7df90862.css.map",
+    "main.81e19135.js.map": "/bdayfreebies/static/js/main.81e19135.js.map",
+    "787.1b1f5857.chunk.js.map": "/bdayfreebies/static/js/787.1b1f5857.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7df90862.css",
-    "static/js/main.6d2555eb.js"
+    "static/js/main.81e19135.js"
   ]
 }
