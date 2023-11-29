@@ -31,7 +31,7 @@ function SearchBar() {
           </label>
         </form>
       </div>
-      <div className="absolute h-4/5 mt-[50px] overflow-scroll w-[calc(100%-2px)]">
+      <div className="absolute h-full sm:h-4/5 mt-[50px] overflow-scroll w-[calc(100%-2px)]">
         {allPlaces.records.map((data) => {
           let store = data.fields["name_of_place"];
           let name = store[0].toUpperCase() + store.slice(1).toLowerCase();
