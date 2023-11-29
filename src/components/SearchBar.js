@@ -34,7 +34,13 @@ function SearchBar() {
       <div className="absolute h-4/5 mt-[50px] overflow-scroll w-[calc(100%-2px)]">
         {allPlaces.records.map((data) => {
           let store = data.fields["name_of_place"];
-          if (store.toLowerCase().includes(place)) {
+          let name = store[0].toUpperCase() + store.slice(1).toLowerCase();
+
+          if (
+            store.toLowerCase().includes(place) ||
+            store.toUpperCase().includes(place) ||
+            name.includes(place)
+          ) {
             isFound = true;
             return <Card data={data} />;
           }
@@ -43,7 +49,7 @@ function SearchBar() {
         {!isFound && (
           <div className="flex flex-col items-center justify-center">
             <h1>No Results Found!</h1>
-            <a href="/">
+            <a href="https://kristixxg.github.io/bdayfreebies/">
               <button className="bg-blue-500 hover:bg-blue-400 text-xs text-white font-bold py-2 px-4 mt-2 border-b-4 border-blue-700 hover:border-blue-500 rounded">
                 Refresh
               </button>
