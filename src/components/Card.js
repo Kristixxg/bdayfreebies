@@ -1,15 +1,9 @@
 import React, { useEffect } from "react";
 import "./card.css";
-import fetchRestaurants from "../fetchPlaces";
-
-//const places = await fetchRestaurants();
-//console.log(places);
 
 function Card({ data }) {
   return (
     <div className="card">
-      {/* {allPlaces.records.map((place) => { */}
-      {/* return ( */}
       <div class="wrap animate pop">
         <div class="overlay">
           <div class="overlay-content animate slide-left delay-2 ">
@@ -60,7 +54,6 @@ function Card({ data }) {
               <em className="font-bold">*Conditions: </em>
               {data.fields.condition}
             </p>
-            
           </div>
 
           <div className="flex mt-4">
@@ -93,8 +86,6 @@ function Card({ data }) {
           </div>
         </div>
       </div>
-      {/* ); */}
-      {/* })} */}
     </div>
   );
 }

@@ -9,7 +9,7 @@ const allPlaces = await fetchRestaurants();
 
 function SearchBar() {
   const [place, setPlace] = useState("");
-  console.log(place);
+  // console.log(place);
 
   let isFound = false;
 
