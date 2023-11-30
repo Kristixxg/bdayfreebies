@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import "./card.css";
 import fetchRestaurants from "../fetchPlaces";
 
-// const places = await fetchRestaurants();
-// console.log(places);
+//const places = await fetchRestaurants();
+//console.log(places);
 
 function Card({ data }) {
   return (
@@ -35,11 +35,7 @@ function Card({ data }) {
         </div>
 
         <div class="text flex flex-col items-end">
-          <img
-            className="inset"
-            src={data.fields["coverImage"]}
-            alt=""
-          />
+          <img className="inset" src={data.fields["coverImage"]} alt="" />
           <div className="flex flex-col items-end ">
             <h1 class="text-sm font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 uppercase">
               {data.fields["name_of_place"]}
@@ -53,6 +49,9 @@ function Card({ data }) {
               ></img>
               {data.fields.address}
             </p>
+            <p className="text-xs max-w-[200px] text-right flex-wrap ">
+              Business Hours: {data.fields.hours}
+            </p>
 
             <p className="mt-3 max-w-[200px] text-right flex-wrap  text-xs font-bold uppercase ">
               {data.fields.items}
@@ -61,6 +60,7 @@ function Card({ data }) {
               <em className="font-bold">*Conditions: </em>
               {data.fields.condition}
             </p>
+            
           </div>
 
           <div className="flex mt-4">

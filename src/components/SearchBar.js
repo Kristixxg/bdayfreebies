@@ -5,7 +5,7 @@ import Card from "./Card";
 import Footer from "./Footer";
 
 const allPlaces = await fetchRestaurants();
-// console.log("All Places: ", allPlaces);
+//console.log("All Places: ", allPlaces);
 
 function SearchBar() {
   const [place, setPlace] = useState("");
