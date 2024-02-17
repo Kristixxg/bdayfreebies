@@ -2,14 +2,11 @@ import React, { useState } from "react";
 import "./searchBar.css";
 import fetchRestaurants from "../fetchPlaces";
 import Card from "./Card";
-import Footer from "./Footer";
 
 const allPlaces = await fetchRestaurants();
-//console.log("All Places: ", allPlaces);
 
 function SearchBar() {
   const [place, setPlace] = useState("");
-  // console.log(place);
 
   let isFound = false;
 

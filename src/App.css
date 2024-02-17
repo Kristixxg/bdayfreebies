@@ -1,64 +1,30 @@
-
 .text-container {
   height: 100vh;
   width: 100vw;
 }
 
-.text-container h1{
+.text-container h1 {
   position: relative;
   font-size: 150px;
-  color:white;
+  color: white;
   -webkit-animation: animate 4s ease-in-out infinite;
   animation: animate 4s ease-in-out infinite;
   text-transform: uppercase;
   font-weight: 900;
 }
 
-  @keyframes animate {
-    0%, 100% {
-   left:0;
-    }
-    25%{
-      left:50%
-     }
-    50% {
-      left:75%;
-    }
-    75% {
-     left: 50%
-    }   
+@keyframes animate {
+  0%,
+  100% {
+    left: 0;
+  }
+  25% {
+    left: 50%;
+  }
+  50% {
+    left: 75%;
+  }
+  75% {
+    left: 50%;
+  }
 }
-
-
-
-/* 
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  box-sizing: border-box;
-} */
-
-/* body {
-  font-family: "Chakra Petch", sans-serif;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-main {
-  background-color: black;
-  background-image: url("https://c8.alamy.com/comp/HAGM56/memphis-pattern-seamless-simple-background-fashion-80-90s-black-and-HAGM56.jpg");
-}
-
-header h1 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin: 30px auto;
-} */

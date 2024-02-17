@@ -1,8 +1,6 @@
 import React from "react";
 import Title from "./Title";
 import SearchBar from "./SearchBar";
-import Card from "./Card";
-import Footer from "./Footer";
 
 function Content() {
   return (
@@ -11,10 +9,6 @@ function Content() {
       <div className="w-full h-[400px]">
         <SearchBar />
       </div>
-      {/* <div className="h-4/5 overflow-scroll">
-        <Card />
-        <Footer />
-      </div> */}
     </div>
   );
 }

@@ -1,12 +1,11 @@
-.animate-charcter
-{
-	text-transform: uppercase;
+.animate-charcter {
+  text-transform: uppercase;
   background-image: linear-gradient(
     -225deg,
     #fc1004 0%,
     #fa6e40 29%,
     #ffffff 67%,
-	rgb(255, 60, 193),
+    rgb(255, 60, 193),
     #0e21c8 100%
   );
   background-size: auto auto;
@@ -19,7 +18,7 @@
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
   display: inline-block;
-      font-size: 40px;
+  font-size: 40px;
 }
 
 @keyframes textclip {
@@ -29,104 +28,80 @@
 }
 
 .wrap {
-	display: flex;
-	flex-wrap: nowrap;
-	justify-content:
-	space-between;
-	/* width: 90vmin; */
-	height: 15em;
-	margin: 1rem auto;
-	border: 1.5px solid;
-	transition: .1s ease-in-out;
-	position: relative;
-	overflow: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  /* width: 90vmin; */
+  height: 15em;
+  margin: 1rem auto;
+  border: 1.5px solid;
+  transition: 0.1s ease-in-out;
+  position: relative;
+  overflow: hidden;
 }
 .overlay {
-	position: relative;
-	display: flex;
-	width: 100%;
-	height: 100%;
-	/* padding: 1rem .75rem; */
-	background: #000b5d;
-	transition: .5s ease-in-out;
-	z-index: 1;
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  /* padding: 1rem .75rem; */
+  background: #000b5d;
+  transition: 0.5s ease-in-out;
+  z-index: 1;
 }
 .overlay-content {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	height: 100%;
-	padding: .5rem 0 0 .5rem;
-	/* border: 3px solid;
-	border-image: 
-    	linear-gradient(
-      	to bottom, 
-      	#AEA724 5%,
-      	forestgreen 35% 65%,
-      	#AEA724 95%
-    	) 0 0 0 100%; */
-	transition: .3s ease-in-out .2s;
-	z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem 0 0 0.5rem;
+  transition: 0.3s ease-in-out 0.2s;
+  z-index: 1;
 }
 
 .image-content {
-	position: absolute;
-	/* top: 0;
-	right: 0; */
-	/* width:100%; */
-	/* height: 100%; */
-	/* background-image: url("https://s.abcnews.com/images/Lifestyle/ht_chipotle_guacamole_jc_150504_16x9_992.jpg"); */
-	/* background-size: 50%; */
-  /* background-repeat:none;  */
-	/* transition: .2s ease-in-out; */
-/* 	border: 1px solid green; */
+  position: absolute;
 }
 
 .inset {
-	max-width: 100%;
-    max-height:70%;
-	/* margin: 0.25em 1em 1em 0; */
-	border-radius: 0.25em;
-	margin-bottom: 1em;
-	/* float: left; */
+  max-width: 100%;
+  max-height: 70%;
+  border-radius: 0.25em;
+  margin-bottom: 1em;
 }
 
 .text {
-	background-color: rgb(255, 255, 255);
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 100%;
-	height: 100%;
-	/* padding: 3vmin 4vmin; */
-	padding: 1em 1em;
-	overflow-y: scroll;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1em 1em;
+  overflow-y: scroll;
 }
 
-.wrap:hover .overlay
- {
-	transform: translateX(-80%);
+.wrap:hover .overlay {
+  transform: translateX(-80%);
 }
-.wrap:hover .image-content {
-	/* width: 10vmin; */
-}
+
 .wrap:hover .overlay-content {
-	border: none;
-	transition-delay: .2s;
-	/* transform: translateX(60vmin); */
+  border: none;
+  transition-delay: 0.2s;
 }
-
 
 /* Animations and timing delays */
 .animate {
   animation-duration: 0.4s;
-  animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+  animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
   animation-fill-mode: backwards;
 }
 /* Pop In */
-.pop { animation-name: pop; }
+.pop {
+  animation-name: pop;
+}
 @keyframes pop {
   0% {
     opacity: 0;
@@ -139,7 +114,9 @@
 }
 
 /* Slide In */
-.slide { animation-name: slide; }
+.slide {
+  animation-name: slide;
+}
 @keyframes slide {
   0% {
     opacity: 0;
@@ -152,7 +129,9 @@
 }
 
 /* Slide Left */
-.slide-left { animation-name: slide-left; }
+.slide-left {
+  animation-name: slide-left;
+}
 @keyframes slide-left {
   0% {
     opacity: 0;
@@ -164,16 +143,18 @@
   }
 }
 
-.slide-up {animation-name: slide-up;}
+.slide-up {
+  animation-name: slide-up;
+}
 @keyframes slide-up {
-	0% {
-		opacity: 0;
-		transform: translateY(3em);
-	}
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
+  0% {
+    opacity: 0;
+    transform: translateY(3em);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .delay-1 {

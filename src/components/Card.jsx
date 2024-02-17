@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./card.css";
 
 function Card({ data }) {
@@ -57,21 +57,24 @@ function Card({ data }) {
           </div>
 
           <div className="flex mt-4">
-            <a target="" href="https://www.yelp.com/">
+            <a target="_" href={`https://www.yelp.com/search?find_desc=${data.fields["name_of_place"]}`}>
               <img
                 className="w-8 h-8 m-1 cursor-pointer"
                 src="https://cdn-icons-png.flaticon.com/128/1377/1377248.png"
                 alt="yelp"
               ></img>
             </a>
-            <a target="_" href="https://www.instagram.com/">
+            <a target="_" href={`https://www.instagram.com/explore/search/keyword/?q=${data.fields["name_of_place"]}`}>
               <img
                 className="w-8 h-8 m-1 cursor-pointer"
                 src="https://cdn-icons-png.flaticon.com/128/3955/3955024.png"
                 alt="instagram"
               ></img>
             </a>
-            <a target="" href="https://www.google.com/maps">
+            <a
+              target="_"
+              href={`https://www.google.com/maps/search/${data.fields["name_of_place"]}`}
+            >
               <img
                 className="w-8 h-8 m-1 cursor-pointer"
                 src="https://cdn-icons-png.flaticon.com/128/355/355980.png"

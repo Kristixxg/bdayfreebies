@@ -1,8 +1,6 @@
 import "./App.css";
-import Card from "./components/Card";
 import Content from "./components/Content";
 import Phone from "./components/Phone";
-import SearchBar from "./components/SearchBar";
 
 function App() {
   return (

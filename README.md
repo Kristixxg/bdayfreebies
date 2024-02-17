@@ -2,33 +2,48 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This website allows you to search and find places that offer freebies for your birthday! 
+🎉 🎁 Unlock a treasure trove of birthday freebies with my website! 🎂 ✨
 
-A responsive application built using React.js for development and Airtable to manage data. Live application can be found here: https://kristixxg.github.io/bdayfreebies/
+This website serves as your ultimate guide to discovering establishments that offer complimentary treats on your special day. Whether you're searching for your favorite stores or eager to discover new spots, this platform empowers you to effortlessly locate the perfect spot to celebrate. Join me and make your birthday celebrations even more memorable!
 
-## Installation
+📱 📞 Live application can be found here: https://kristixxg.github.io/bdayfreebies/ 
 
-Installation is not required for this application.
+## Code Sample Screenshots
+
+Secure API Key while fetching data with Async Await. Data organized using [Airtable](https://www.airtable.com/).
+<img src="public/images/fetchingData.png" alt="render places" width="800" />
+
+
+React.js implementation of search and filter components. Update outputs in response to an interaction. 
+- useState hook to manage state and update the screen
+- the array map() function to render lists of components
+- conditional rendering using ternary operator
+- stying with TailwindCSS 
+- React individual components and use props to comunication data
+
+![React.js implementation of search and filter components](/public/images/renderplaces.png)
+
+Store sensitive data from application code using .env and .gitignore the .env file
+<img src="public/images/gitignore.png" alt="Store sensitive data from application code using .env and .gitignore the .env file" width="700" />
 
 ## Credits
 
-Technologies   
+Technologies  
  ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-                   ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)                  ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
 
-| 📚 APIs Used        |
-| :------------------ |
-| Airtable |
+| 📚 APIs Used |
+| :----------- |
+| Airtable     |
 
-| 📒 Libraries            |
-| :---------------------- |
-| TailwindCSS |
-| Flaticons              |
+| 📒 Libraries |
+| :----------- |
+| TailwindCSS  |
+| Flaticons    |
 
 ## Author
 
 Kristy Guo [LinkedIn](www.linkedin.com/in/kristixxg) | [GitHub](https://github.com/kristixxg)
-
 
 ## License
 
